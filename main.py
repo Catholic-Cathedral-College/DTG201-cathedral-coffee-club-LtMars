@@ -45,10 +45,19 @@ def get_orders():
           next = input("That isn't a valid option. Try again")
 
 #This triggers a loop so that it goes back if they want to order more drinks
+           
 get_orders()
-#This is just a simple string that asks the user if they want sugar along with their order
-sugar = input("Would you like sugar with your order?")
 
+#This is just a simple string that asks the user if they want sugar along with their order, any answer that is not yes or no will automatically go to no
+
+sugar = input("Would you like sugar with your order? yes or no")
+if sugar == "yes":
+  print("Your order will be handed with sugar packets")
+if sugar == "no":
+  print("Your order will be handed to you shortly.")
+else:
+  print("No sugar it is then")
+  
 
 #This is an if condition that has a condition oif the price is 0 or is not functioning properly it would print Error and would need to restart the code from the beginning. 
 if price == 0:
@@ -56,4 +65,4 @@ if price == 0:
 else:
   print("Your Total amount to pay is ${} for your order. Please pay at the cashier. ".format(price))
   print("Have a good day")
-#The code finishes and prints the total amount of price the user would pay how much the order would cost.
+#The code finishes and prints the total amount of price the user would pay for their order.
