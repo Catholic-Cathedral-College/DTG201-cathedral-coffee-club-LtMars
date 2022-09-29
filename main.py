@@ -44,8 +44,7 @@ def get_orders():
          else:
           next = input("That isn't a valid option. Try again")
 
-#This triggers a loop so that it goes back if they want to order more drinks
-           
+#This triggers a loop so that it goes back if they want to order more drinks          
 get_orders()
 
 #This is just a simple string that asks the user if they want sugar along with their order, any answer that is not yes or no will automatically go to no
