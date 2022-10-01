@@ -15,7 +15,7 @@ Latte = $3.50
 Hot Chocolate = $4.00
 """)
 #This string will put the user's order name and store it as order_name
-order_name = input("What order name would you like?")
+order_name = input("What order name would you like?").strip().split()
 #This variable sets the value of price to 0 so when the user is finished ordering their drink, the ordered drinks would be placed into the variable "price"
 price = 0
 #This is the def function that contains the list of the coffee drinks, their prices and the most important one, it can multiply the price of the drink if the user ordered the drink more than once. It also has an else condition if the user wrote an ordered drink 
